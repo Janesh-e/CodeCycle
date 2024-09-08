@@ -1,0 +1,10 @@
+
+import "zokrates_stdlib/hashes/sha256/512bitPacked" as sha256packed
+import "hashes/sha256/utils" as utils
+
+def main(private field a, private field b, private field c, private field d, field ho, field h1){ 
+    field[2] h = sha256packed([a,b,c,d]);
+    assert(h[0] == h0);
+    assert(h[1] == h1);
+    return;
+}
